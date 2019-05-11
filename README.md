@@ -9,7 +9,10 @@ The web is a crazy place! In this talk I will go over some weird and dark aspect
 *	5m Q & A.
 Total time: 27m.
 
-## Installation
+## Slides
+https://deckele.github.io/js-shenanigans
+
+## Local installation
 1.	git clone https://github.com/deckele/js-shenanigans.git
 2.	npm i
 3.	npm start
