@@ -9,6 +9,7 @@
 		<link rel="stylesheet" href="revealjs/css/reset.css">
 		<link rel="stylesheet" href="revealjs/css/reveal.css">
 		<link rel="stylesheet" href="revealjs/css/theme/black.css">
+		<link rel="stylesheet" href="lib/speech/style.css">
 
 		<!-- Theme used for syntax highlighting of code -->
 		<link rel="stylesheet" href="revealjs/lib/css/monokai.css">
@@ -25,12 +26,22 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section>Slide 1</section>
+				<section>
+					<h3>Beware of Javascript Shenanigans!</h1>
+						<iframe 
+							id="speech"
+							class="stretch"
+							src="speech-synthesis"
+						></iframe>
+						<button class="speech-button" onclick="onSpeechStart();">Speak</button>
+						<button class="speech-button" onclick="onSpeechStop();">Stop!</button>
+				</section>
 				<section>Slide 2</section>
 			</div>
 		</div>
 
 		<script src="revealjs/js/reveal.js"></script>
+		<script src="lib/speech/script.js"></script>
 
 		<script>
 			// More info about config & dependencies:
