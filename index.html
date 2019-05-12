@@ -237,6 +237,10 @@
 						</code></pre>
 					</section>
 					<section>
+						<h3>I know, but bare with me...</h3>
+						<img src="assets/kill-me.gif" alt="kill me gif">
+					</section>
+					<section>
 						<div>
 							<h7>Cast to Number</h7>
 							<pre><code data-trim>
@@ -293,6 +297,28 @@
 						<img style="height:500px;" src="assets/equality-in-js.png" alt="equality in js">
 						<span class="spoilers">SPOILERS!</span>
 					</div>
+				</section>
+				<section>
+					<h4>Security issues found in NPM last year</h4>
+					<img style="height:200px; border-radius: 4px;" src="assets/lock.jpg" alt="lock">
+				</section>
+				<section>
+					<h4>eslint-scope@3.7 and eslint-config-eslint@5.0 (July)</h4>
+					<ul>
+						<li class="fragment">Millions of users</li>
+						<li class="fragment">Stole private user information</li>
+						<li class="fragment">Attacker got access to the credentials of a maintainer</li>
+						<li class="fragment">Attack through a postinstall script, which downloads and execs code</li>
+						<li class="fragment">Script was found only because of script bug on slow connections!</li>
+					</ul>
+				</section>
+				<section>
+					<h4>event-stream@3.3.6 (Sep - November)</h4>
+					<ul>
+						<li>Maintainer gave control of the repo willingly to the attacker</li>
+						<li>shipped with the malicious dependency: flatmap-stream</li>
+						<li>Stole Bitcoin wallet information</li>
+					</ul>
 				</section>
 			</div>
 		</div>
