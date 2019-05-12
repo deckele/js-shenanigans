@@ -4,6 +4,13 @@
     border: none;
 }
 
+.reveal section img.knight {
+    border: none;
+    border-radius: 50%;
+    height: 250px;
+    width: 250px;
+}
+
 .reveal section img.stars {
     height: 50px;
     width: 50%;
@@ -37,4 +44,10 @@
 
 .issues-wrapper span {
     flex-wrap: wrap;
+}
+
+.spoilers {
+    transform: rotate(45deg);
+    color: #d02a2a;
+    text-decoration: underline;
 }

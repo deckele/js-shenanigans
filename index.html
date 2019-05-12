@@ -56,6 +56,41 @@
 					</ul>
 				</section>
 				<section>
+					<h3>But first</h3>
+					<p>Lets warm up a bit...</p>
+					<img class="knight" src="assets/knight.jpeg" alt="knight">
+				</section>
+				<section>
+					<p><em>“When nothing is possible, then do the impossible.”</em></p>
+					<p>― Debasish Mridha</p>
+				</section>
+				<section>
+					<h5>Can this be true??</h5>
+					<pre><code data-trim class="hljs" data-line-numbers>
+						if(a ==1 && a==2 &&  a==3) {
+						  console.log("you should never have seen this!");
+						}
+					</code></pre>
+					<pre class="fragment"><code data-trim class="hljs" data-line-numbers>
+						const a = {
+						  i: 1,
+						  toString: function () { // valueOf, [Symbol.toPrimitive]
+						    return a.i++;
+						  }
+						}
+					</code></pre>
+					<pre class="fragment"><code data-trim class="hljs" data-line-numbers>
+						// half-width Hangul (Korean Unicode space character)
+						var aﾠ  = 1; // a_ = 1;
+						var a = 2;  // a = 2;
+						var ﾠ a = 3; // _a = 3;
+					</code></pre>
+					<pre class="fragment"><code data-trim class="hljs" data-line-numbers>
+						a = [1,2,3];
+						a.join = a.shift;
+					</code></pre>
+				</section>
+				<section>
 					<section>
 						<h3>Weird NPM packages</h3>
 						<img src="assets/banana-wtf.jpeg" alt="Banana WTF">
@@ -148,13 +183,116 @@
 						<img class="fragment" style="height:550px" src="assets/is-thirteen-issues-closed.png" alt="is-thirteen closed issues">
 					</section>
 					<section>
-						<h4>And now, for something completely different</h4>
-						<img src="assets/something-different.gif" alt="monty python gif">
+						<h3>eeeeeeeeeeeeeeeeeee...</h3>
+						<img class="readme" style="height:550px;" src="assets/e.png" alt="eeeee...">
 					</section>
 					<section>
-						<h3>JS F@#k</h3>
-
+						<h3>JSFuck []()!+</h3>
+						<ul>
+							<li>Esoteric and educational programming style based on the atomic parts of JavaScript</li>
+							<li>It uses only six different characters!</li>
+						</ul>
 					</section>
+					<section>
+						<h3>Example</h3>
+						<p>The following source will do an <em>alert(1)</em>:</p>
+						<pre><code data-trim class="hljs">
+							[][(![]+[])[+[]]+([![]]+[][[]])[+!+[]+[+[]]]+(![]+[])[!+[]+!+[]]+(!![]+[])[+[
+							]]+(!![]+[])[!+[]+!+[]+!+[]]+(!![]+[])[+!+[]]][([][(![]+[])[+[]]+([![]]+[][[]
+							])[+!+[]+[+[]]]+(![]+[])[!+[]+!+[]]+(!![]+[])[+[]]+(!![]+[])[!+[]+!+[]+!+[]]+
+							(!![]+[])[+!+[]]]+[])[!+[]+!+[]+!+[]]+(!![]+[][(![]+[])[+[]]+([![]]+[][[]])[+
+							!+[]+[+[]]]+(![]+[])[!+[]+!+[]]+(!![]+[])[+[]]+(!![]+[])[!+[]+!+[]+!+[]]+(!![
+							]+[])[+!+[]]])[+!+[]+[+[]]]+([][[]]+[])[+!+[]]+(![]+[])[!+[]+!+[]+!+[]]+(!![]
+							+[])[+[]]+(!![]+[])[+!+[]]+([][[]]+[])[+[]]+([][(![]+[])[+[]]+([![]]+[][[]])[
+							+!+[]+[+[]]]+(![]+[])[!+[]+!+[]]+(!![]+[])[+[]]+(!![]+[])[!+[]+!+[]+!+[]]+(!!
+							[]+[])[+!+[]]]+[])[!+[]+!+[]+!+[]]+(!![]+[])[+[]]+(!![]+[][(![]+[])[+[]]+([![
+							]]+[][[]])[+!+[]+[+[]]]+(![]+[])[!+[]+!+[]]+(!![]+[])[+[]]+(!![]+[])[!+[]+!+[
+							]+!+[]]+(!![]+[])[+!+[]]])[+!+[]+[+[]]]+(!![]+[])[+!+[]]]((![]+[])[+!+[]]+(![
+							]+[])[!+[]+!+[]]+(!![]+[])[!+[]+!+[]+!+[]]+(!![]+[])[+!+[]]+(!![]+[])[+[]]+(!
+							[]+[][(![]+[])[+[]]+([![]]+[][[]])[+!+[]+[+[]]]+(![]+[])[!+[]+!+[]]+(!![]+[])
+							[+[]]+(!![]+[])[!+[]+!+[]+!+[]]+(!![]+[])[+!+[]]])[!+[]+!+[]+[+[]]]+[+!+[]]+(
+							!![]+[][(![]+[])[+[]]+([![]]+[][[]])[+!+[]+[+[]]]+(![]+[])[!+[]+!+[]]+(!![]+[
+							])[+[]]+(!![]+[])[!+[]+!+[]+!+[]]+(!![]+[])[+!+[]]])[!+[]+!+[]+[+[]]])()
+						</code></pre>
+					</section>
+					<section>
+						<h3>The Basics</h3>
+						<pre><code data-trim>
+							false       =>  ![]
+							true        =>  !![]
+							undefined   =>  [][[]]
+							NaN         =>  +[![]]
+							0           =>  +[]
+							1           =>  +!+[]
+							2           =>  !+[]+!+[]
+							10          =>  +[[+!+[]]+[+[]]]
+							Array       =>  []
+							Number      =>  +[]
+							String      =>  []+[]
+							Boolean     =>  ![]
+							Function    =>  []["filter"]
+							run         =>  []["filter"]["constructor"]( CODE )()
+							eval        =>  []["filter"]["constructor"]("return eval")()( CODE )
+							window      =>  []["filter"]["constructor"]("return this")()
+						</code></pre>
+					</section>
+					<section>
+						<div>
+							<h7>Cast to Number</h7>
+							<pre><code data-trim>
+								+[] // 0 - the number 0
+							</code></pre>
+						</div>
+						<div class="fragment">
+							<h7>Increment Numbers</h7>
+							<pre><code data-trim>
+								++[ 0  ][  0  ] // 1
+								++[ [] ][ +[] ] // 1
+							</code></pre>
+						</div>
+						<div class="fragment">
+							<h7>Getting undefined</h7>
+							<pre><code data-trim>
+								[][   0 ] // undefined
+								[][ +[] ] // get first element (undefined)
+								[][  [] ] // look for property ""
+							</code></pre>
+						</div>
+						<div class="fragment">
+							<h7>Getting NaN</h7>
+							<pre><code data-trim>
+								+[][[]]    // +undefined = NaN
+							</code></pre>
+						</div>
+					</section>
+					<section>
+						<h7>+[] – Casting to String</h7>
+						<pre><code data-trim>
+							  []        +[] // "" - empty string
+							 +[]        +[] // "0"
+							  [][[]]    +[] // "undefined"
+							++[][[]]    +[] // "NaN
+							++[[]][+[]] +[] // "1"
+						</code></pre>
+						<p class="fragment">
+							Since we have "NaN" and "undefined", we got the following characters:
+							N,a,d,e,f,i,n,u.
+						</p>
+					</section>
+				</section>
+				<section>
+					<h4>And now, for something completely different</h4>
+					<img src="assets/something-different.gif" alt="monty python gif">
+				</section>
+				<section>
+					<h3>Javascript Equality Game</h3>
+					<span>The Worst Minesweeper 💣 Ever: </span>
+					<a href="http://eqeq.js.org" target="_blank">http://eqeq.js.org</a>
+					<div class="fragment" style="display: flex; align-items: center;">
+						<span class="spoilers">SPOILERS!</span>
+						<img style="height:500px;" src="assets/equality-in-js.png" alt="equality in js">
+						<span class="spoilers">SPOILERS!</span>
+					</div>
 				</section>
 			</div>
 		</div>
@@ -168,6 +306,7 @@
 			// - https://github.com/hakimel/reveal.js#dependencies
 			Reveal.initialize({
 				hash: true,
+				navigationMode: "linear",
 				dependencies: [
 					// Interpret Markdown in <section> elements
 					{ src: 'revealjs/plugin/markdown/marked.js' },
